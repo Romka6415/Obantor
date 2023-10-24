@@ -1,0 +1,89 @@
+@import '../../styles/_variables.scss';
+.container {
+	width: 100%;
+	display: flex;
+}
+
+.first_section {
+	width: 40%;
+}
+
+.second_section {
+	width: 60%;
+}
+
+section > h1 {
+	width: 700px;
+	color: white;
+	font-weight: 500;
+	line-height: 1.5;
+	font-size: 70px;
+	margin-bottom: 80px;
+}
+
+.advantages {
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: white;
+}
+
+h3 {
+	font-size: 25px;
+	font-weight: 500;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.description {
+	font-size: 15px;
+	color: white;
+	opacity: 0.6;
+	text-transform: uppercase;
+}
+
+.second_section > .description {
+	margin-top: 50px;
+	width: 60%;
+	line-height: 1.5;
+	text-transform: none;
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 60px;
+}
+
+.demo_button {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	background: $primary;
+	padding: 20px 30px 20px 30px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: 600;
+	transition: all 0.4s ease;
+	margin-bottom: 80px;
+}
+
+.demo_button:hover {
+	background: darken($primary, 30%);
+}
+
+.sponsors {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sponsors > li {
+	width: 80px;
+	height: 80px;
+	filter: grayscale(1);
+	transition: all 0.4s ease;
+}
+
+.sponsors > li:hover {
+	filter: grayscale(0);
+}

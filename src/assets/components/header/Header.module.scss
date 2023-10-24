@@ -1,0 +1,96 @@
+@import '../../styles//variables';
+header {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	margin-bottom: 100px;
+}
+
+.logo {
+	color: $primary;
+	font-size: 40px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+}
+
+li > a {
+	color: white;
+	font-size: 25px;
+	opacity: 0.4;
+	text-decoration: none;
+	transition: all 0.4s ease;
+	position: relative;
+}
+
+.menu > li > a::before {
+	content: '';
+	bottom: -10px;
+	right: 0;
+	position: absolute;
+	width: 0%;
+	height: 3px;
+	background: $primary;
+	transition: all 0.4s ease;
+}
+
+.menu > li > a:hover:before {
+	width: 50%;
+}
+
+li {
+	margin-right: 50px;
+	list-style-type: none;
+}
+
+li:last-child {
+	margin-right: 0px;
+}
+
+a:hover {
+	content: '';
+	opacity: 1;
+	font-weight: 600;
+}
+
+.button {
+	padding: 20px 70px 20px 70px;
+	border: 2px solid grey;
+	text-decoration: none;
+	border-radius: 20px;
+	transition: all 1s ease;
+	position: relative;
+}
+
+h5 {
+	color: white;
+	font-size: 25px;
+	opacity: 0.4;
+}
+
+.button::before {
+	border-radius: 20px;
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	width: 0%;
+	height: 100%;
+	background: $primary;
+	z-index: -1;
+	transition: all 0.8s ease;
+}
+
+.button:hover:before {
+	width: 100%;
+}
+
+.button:hover > h5 {
+	opacity: 1;
+}
